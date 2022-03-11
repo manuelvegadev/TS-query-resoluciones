@@ -1,0 +1,130 @@
+
+/* ~~~~~~~~~~~~~~~~~~ main.css ~~~~~~~~~~~~~~~~~~ */
+
+::-webkit-scrollbar {
+    width: .625em; /* ~10px */
+}
+::-webkit-scrollbar-track {
+    background: var(--color-gray-100);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray-500);
+    border-radius: .625em; /* ~10px */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray-700);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+h1 {font-size: 4.8rem;}
+h2 {font-size: 4rem;}
+h3 {font-size: 3.2rem;}
+h4 {font-size: 2.4rem;}
+
+@media (max-width: 998px) {
+    h1 {font-size: 2.8rem;}
+    h2 {font-size: 2rem;}
+    h3 {font-size: 1.6rem;}
+    h4 {font-size: 1.2rem;}
+}
+
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input,
+button,
+label,
+select,
+a,
+*[onclick] {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.title1 {
+    font-family: var(--font-headings);
+    font-weight: 300;
+    font-size: 6em;
+    letter-spacing: -.01em;
+}
+
+.title2 {
+    font-family: var(--font-headings) !important;
+    font-weight: 300;
+    font-size: 3.75em !important;
+    letter-spacing: -.01em;
+}
+
+.title3 {
+    font-family: var(--font-headings) !important;
+    font-weight: 400;
+    font-size: 3em !important;
+}
+
+.title4 {
+    font-family: var(--font-headings);
+    font-weight: 400;
+    font-size: 2.125em;
+}
+
+.title5 {
+    font-family: var(--font-headings) !important;
+    font-weight: 400;
+    font-size: 1.5em !important;
+}
+
+.title6 {
+    font-family: var(--font-headings);
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.subtitle1 {
+    font-family: var(--font-headings);
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: .01em;
+}
+
+.subtitle2 {
+    font-family: var(--font-headings);
+    font-weight: 500;
+    font-size: .875em;
+    letter-spacing: .01em;
+}
+
+.bs-2dp {box-shadow: var(--shadow-2dp)}
+.bs-4dp {box-shadow: var(--shadow-4dp)}
+.bs-6dp {box-shadow: var(--shadow-6dp)}
+.bs-12dp {box-shadow: var(--shadow-12dp)}
+.bs-24dp {box-shadow: var(--shadow-24dp)}
+
+.font-body {
+    font-family: var(--font-body);
+}
+
+date-input-polyfill {
+    z-index: 9999999;
+}
+
+body {
+    background-color: var(--color-gray-900);
+    color: var(--color-gray-200);
+}
+
+.md-button.icon {
+    color: inherit !important;
+}
