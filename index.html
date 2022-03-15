@@ -21,45 +21,34 @@
 </head>
 <body>
 <div class="container reduced py-5">
+    
     <div class="row">
         <div class="col s12">
             <h1>Generar query de inserción de Resoluciones</h1>
         </div>
     </div>
-    <form id="pdf-form" class="row md-form" action="">
-        <div class="col s12">
-            <label for="codigo-estacion">Código estación</label>
-            <input type="text" name="codigo-estacion" id="codigo-estacion" required>
-        </div>
-        <div class="col s12">
-            <label for="pdf-text">Texto del PDF</label>
-            <textarea id="pdf-text" name="pdf-text" required></textarea>
-        </div>
+    
+    <form id="pdf-form" class="row md-form" action="">        
         <div class="col s12 d-flex align-items-center justify-content-between">
             <input type="checkbox" name="copyAfterGenerate" id="copyAfterGenerate" checked>
             <label class="inline" for="copyAfterGenerate">Copiar después de generar</label>
             <button class="inline" type="submit" data-md-icon="auto_awesome">Generar query</button>
         </div>
     </form>
+    
     <div class="row md-form">
         <div class="col s12">
             <h2>Resultados</h2>
         </div>
-        <div class="col s12 sm6">
+        <div class="col s12">
             <div class="d-flex align-items-center mb-3">
-                <label class="title6 mb-0 mr-2" style="width:auto" for="outputInsertFACEL">Insert FACEL</label>
+                <label class="title6 mb-0 mr-2" style="width:auto" for="outputInsertFACEL">SQL Query</label>
                 <button class="md-button icon rounded" data-md-icon="content_copy" data-density="comfortable" title="Copiar query"></button>
             </div>
             <textarea class="monospace" id="outputInsertFACEL" readonly></textarea>
         </div>
-        <div class="col s12 sm6">
-            <div class="d-flex align-items-center mb-3">
-                <label class="title6 mb-0 mr-2" style="width:auto" for="outputInsertNOTACREDITO">Insert NOTA CREDITO</label>
-                <button class="md-button icon rounded" data-md-icon="content_copy" data-density="comfortable" title="Copiar query"></button>
-            </div>
-            <textarea class="monospace" id="outputInsertNOTACREDITO" readonly></textarea>
-        </div>
     </div>
+    
 </div>
 </body>
 </html>

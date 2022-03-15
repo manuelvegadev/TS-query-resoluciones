@@ -61,8 +61,8 @@ form.md-form:not(.md-popup) {
 .md-form input[type="password"],
 .md-form textarea,
 .md-form select {
-    border: 1px solid var(--color-gray-400);
-    background-color: var(--color-gray-200);
+    border: 1px solid var(--color-gray-600);
+    background-color: var(--color-gray-800);
     border-radius: .25em;
     font-size: 1em;
     font-family: var(--font-body);
@@ -73,7 +73,7 @@ form.md-form:not(.md-popup) {
     padding: 0 1em;
     margin: 1px;
     line-height: normal;
-    color: var(--color-gray-900);
+    color: var(--color-gray-200);
     transition: var(--transition-small);
     caret-color: var(--color-main);
     box-shadow: 0 0 0 1px transparent;
@@ -200,7 +200,7 @@ form.md-form:not(.md-popup) {
 .md-form input[type="password"]:hover,
 .md-form textarea:hover,
 .md-form select:hover {
-    border-color: var(--color-gray-700);
+    border-color: var(--color-gray-400);
 }
 
 .md-select.filled:hover,
@@ -313,6 +313,39 @@ form.md-form:not(.md-popup) {
 .md-form input[type="submit"].disabled {
     border-color: var(--color-gray-400);
     color: var(--color-gray-400);
+}
+
+.md-select:read-only,
+.md-form input[type="text"]:read-only,
+.md-form input[type="search"]:read-only,
+.md-form input[type="email"]:read-only,
+.md-form input[type="url"]:read-only,
+.md-form input[type="tel"]:read-only,
+.md-form input[type="date"]:read-only,
+.md-form input[type="time"]:read-only,
+.md-form input[type="number"]:read-only,
+.md-form input[type="password"]:read-only,
+.md-form textarea:read-only,
+.md-form select:read-only,
+/*.md-form button[type="submit"]:read-only,*/
+/*.md-form input[type="submit"]:read-only,*/
+.md-select.readonly,
+.md-form input[type="text"].readonly,
+.md-form input[type="search"].readonly,
+.md-form input[type="email"].readonly,
+.md-form input[type="url"].readonly,
+.md-form input[type="tel"].readonly,
+.md-form input[type="date"].readonly,
+.md-form input[type="time"].readonly,
+.md-form input[type="number"].readonly,
+.md-form input[type="password"].readonly,
+.md-form textarea.readonly,
+.md-form select.readonly/*,
+.md-form button[type="submit"].readonly,*/
+/*.md-form input[type="submit"].readonly */{
+    background-color: var(--color-gray-800);
+    border-color: var(--color-gray-700);
+    color: var(--color-gray-500);
 }
 
 .md-select.disabled:hover,
